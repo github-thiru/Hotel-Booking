@@ -1,0 +1,172 @@
+/* body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.landing-container {
+    text-align: center;
+}
+
+.header-section {
+    background-color: #800000;
+    color: white;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.header-section h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.description {
+    font-size: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.book-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: white;
+    color: #800000;
+} */
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.landing-container {
+    text-align: center;
+}
+
+.header-section {
+    background-color: #000d80;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/814/350/568/spa-beach-hotel-infinity-pool-wallpaper-thumb.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 100px 20px;
+    position: relative;
+    animation: slideIn 1.5s ease-out;
+}
+
+
+.header-section,p{
+    color: rgb(45, 82, 216);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header-section h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.description {
+    font-size: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.book-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.book-btn:hover {
+    background-color: white;
+    color: #800000;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.image-card img {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-section {
+    background-color: #f0e6e6;
+    padding: 60px 20px;
+}
+
+.info-section h2 {
+    font-size: 36px;
+    color: #800000;
+    margin: 0;
+    font-weight: bold;
+}

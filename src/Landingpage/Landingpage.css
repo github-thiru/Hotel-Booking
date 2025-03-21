@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+ 
+}
+
+/* .navbar-nav{
+  text-align: center;
+} */
+
+/* #navbarNav{
+  text-align: center;
+} */
+
+/* .navbar-nav{
+  margin-right: auto;
+} */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px; /* Adjust thickness of the underline */
+  background-color: blue; /* Adjust the underline color */
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 786px) {
+    #butt {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 787px) {
+    #butt {
+        display: block;
+    }
+    #but {
+        display: none;
+    }
+}
+
+/* Google Font Import */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://is1-2.housingcdn.com/4f2250e8/597d139da7217705ad0ff568ef9dba38/v0/fs/vision_urjith-tellapur-hyderabad-vision_avenues_pvt_ltd.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    text-align: left;
+    color: white;
+    padding: 0 10%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 50, 0.6);
+}
+
+.content {
+    position: relative;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+    color: #948e8e;
+}
+
+.btn {
+    display: inline-block;
+    background: #122da4fa;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #091b3a;
+    border-color: #afb2c6;
+}
+
+  /* hotel info */
+.hotel-info {
+    text-align: center;
+    background-color: #fafafa;
+    padding: 60px 20px 0px  20px;
+  }
+  
+  .hotel-info h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  
+  .hotel-info p {
+    font-size: 18px;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .hotel-info h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 40px;
+  }
+  
+
+  .offers-section {
+    text-align: center;
+    background-color: #fafafa;
+    padding: 60px 20px 0px 20px;
+  }
+  
+  /* .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid transparent; /* Optional: simulates a typing cursor */
+ 
+    .section-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      display: inline-block;
+      position: relative;
+      cursor: pointer; /* Indicates interactivity */
+    }
+    
+    /* Hover effect - Blue underline */
+    .section-title::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height: 3px;
+      background-color: rgb(51, 51, 92);
+      transition: width 0.3s ease-in-out;
+    }
+    
+    .section-title:hover::after {
+      width: 100%;
+    }
+    
+    
+    
+ 
+  
+  
+  .offers-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .offer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease-in-out;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .offer:hover {
+    background: rgba(194, 207, 211, 0.2); /* Light blue shade */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  .offer-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color:#807c7c;
+    line-height: 1.5;
+  }
+  
+  .read-more-btn {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #444;
+  }
+  
+
+  /* why choose */
+
+  .why-choose-us {
+    text-align: center;
+    background-color: #fafafa;
+    padding: 60px 20px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icon {
+    background: #eef;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #5a67d8;
+    font-size: 24px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .feature:hover .icon {
+    background: #5a67d8;
+    color: white;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .feature:hover h3 {
+    color: #5a67d8;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  }
+  
+  .feature:hover p {
+    color: #333;
+  }
+
+
+
+  .testimonial-section {
+    text-align: center;
+    background-color: #f4f7fe;
+    padding: 50px 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .location {
+    color: gray;
+    font-size: 14px;
+  }
+  
+  .stars {
+    color: #ffcc00;
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .review {
+    font-style: italic;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* subscribe */
+  /* Main Container */
+.subscribe-section {
+    background-color: #1d1886; /* Blue Background */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading and Paragraph */
+  .subscribe-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .subscribe-section p {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #05050cef;
+  }
+  
+  /* Form Container */
+  .subscribe-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Input Box */
+  .subscribe-form input {
+    width: 300px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  /* Subscribe Button */
+  .subscribe-form button {
+    background-color: #1d1a6c; /* Darker Blue */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Hover Effect */
+  .subscribe-form button:hover {
+    background-color: #0a0834;
+  }
+  
+
+  /* Footer */
+  /* Footer Styles */
+.footer {
+    background-color: #0f172a;
+    color: #d1d5db;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer Container */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Brand Section */
+  .footer-brand {
+    max-width: 300px;
+  }
+  
+  .footer-brand h2 {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #a5b4fc;
+  }
+  
+  .highlight {
+    color: white;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .footer-brand p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #9ca3af;
+  }
+  
+  /* Social Icons */
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: #a5b4fc;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  .social-icon:hover {
+    color: #ffffff;
+  }
+  /* Footer Links */
+  .footer-links {
+    min-width: 180px;
+  }
+  
+  .footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .footer-links li:hover {
+    color: #a5b4fc;
+  }
+  
+  /* Contact Section */
+  .footer-contact {
+    max-width: 200px;
+  }
+  
+  .footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #e7e0e0;
+  }
+  
+  .footer-contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #cdd0dc; /* Default icon color */
+    transition: color 0.3s ease-in-out;
+  }
+
+  .footer-contact p:hover {
+    color: #404a93; /* Change to white on hover */
+  }
+
+
+
+  /* Contact Icons Hover Effect */
+.footer-contact p svg {
+    color: #a5b4fc; /* Default icon color */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-contact p svg:hover {
+    color: #ffffff; /* Change icon color on hover */
+  }
+
+
+  /* Bottom Footer */
+  .footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+  }
+  
+  .footer-policies {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .footer-policies span {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .footer-policies span:hover {
+    color: #a5b4fc;
+  }
+  
